@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../images/logo.svg';
-import {FaAlignRight} from 'react-icons/fa';
+import {AiOutlineBars}  from "react-icons/ai";
 import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
@@ -22,7 +22,7 @@ class Navbar extends Component {
               <img src={logo} alt="beach resort"/>
             </Link>
             <button type="button" className="nav-btn" onClick={this.handleToggle}>
-              <FaAlignRight className="nav-icon"/>
+              <AiOutlineBars className="nav-icon"/>
             </button>
           </div>
           <ul className={this.state.isOpen? 'nav-links show-nav' : 'nav-links'}>
